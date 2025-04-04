@@ -141,7 +141,9 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ##### Proposta para Persona XPTO ⚠️ EXEMPLO ⚠️
 
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
+![Proposta de valor 1](images/proposta-de-valor1.png)
+
+![Proposta de valor 2](images/proposta-de-valor2.png)
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
