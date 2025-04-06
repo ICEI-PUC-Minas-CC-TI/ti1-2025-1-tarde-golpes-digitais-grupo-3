@@ -2,7 +2,7 @@
 
 Informações básicas do projeto.
 
-* **Projeto:** [DEMASCARA]
+* **Projeto:** [DISMASCARA]
 * **Repositório GitHub:** [https://github.com/ICEI-PUC-Minas-CC-TI/ti1-2025-1-tarde-golpes-digitais-grupo-3]
 * **Membros da equipe:**
 
