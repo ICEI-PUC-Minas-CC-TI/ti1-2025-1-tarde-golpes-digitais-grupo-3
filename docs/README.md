@@ -54,7 +54,7 @@ Além de  prejuízos financeiros, esses crimes podem causar danos emocionais e  
 
 ![Highlights 2](images/highlights2.png)
 
-![Highlights 3](images/higlights3.png)
+![Highlights 3](images/highlights3.png)
 
 ## Etapa de Definição
 
