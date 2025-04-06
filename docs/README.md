@@ -46,7 +46,7 @@ Além de  prejuízos financeiros, esses crimes podem causar danos emocionais e  
 
 ## Etapa de Entendimento
 
-![Matriz CSD](images/Matriz-csd.png)
+![Matriz CSD](images/Matriz-csd.jpg)
 
 ![Entrevista qualitativa](images/entrevista-qualitativa.png)
 
