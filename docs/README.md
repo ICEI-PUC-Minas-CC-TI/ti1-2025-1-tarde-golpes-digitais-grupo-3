@@ -27,64 +27,34 @@ A documentação do projeto é estruturada da seguinte forma:
 Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa e público-alvo.
 
 ## Problema
-> 
+> Os golpes digitais têm se tornado um problema crescente com o avanço da tecnologia e o aumento do uso da internet. Criminosos utilizam técnicas  como phishing, falsificação de sites e malware para enganar vítimas e  roubar dados pessoais, como senhas e informações bancárias. Muitas  vezes, os golpes são sofisticados e difíceis de identificar,  aproveitando-se da confiança ou desatenção dos usuários.
+Além de  prejuízos financeiros, esses crimes podem causar danos emocionais e  comprometer a segurança digital de indivíduos e empresas. A falta de  conhecimento sobre práticas seguras na internet e a dificuldade em  rastrear os criminosos agravam o problema. Por isso, é essencial adotar  medidas de prevenção, como verificar a autenticidade de mensagens e  sites, além de usar ferramentas de segurança, como antivírus e  autenticação em dois fatores, além de talvez uma nova ferramenta, pois as existentes não são satisfatórias.
 
 
 ## Objetivos
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
->
-> **Orientações**:
->
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+>O objetivo geral será desenvolver um software que reduza o número de vítimas de golpes digitais e agilize a sua identificação, com os objetivos específicos em fazer uma ferramenta simples e fácil de utilizar, mas que seja alterável e prática.
 
 ## Justificativa
-
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
->
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Orientações**:
->
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+>As ferramentas atuais não são suficientes para evitar golpes digitais com o número de vítimas aumentando cada vez mais. Muitas das vítimas são de uma faixa etária elevada ou não possuem conhecimento sobre o meio digital. Além disso, até mesmo aqueles que possuem alto conhecimento podem ser vítimas.
 
 ## Público-Alvo
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva quais são as pessoas que usarão a sua aplicação indicando os diferentes perfis. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
->
-> **Orientações**:
->
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+>Faremos o site focando em um público idoso, com uma interface intuitiva, páginas de tutoriais e ferramentas de acessibilidade como menu de aumentar fonte do texto. Porém, queremos que as ferramentas sejam práticas e úteis para outros tipos de usuários, então utilizaramos de uma página de comentários para feedback.
 
 # Product Discovery
 
 ## Etapa de Entendimento
 
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
+![Matriz CSD](images/Matriz-csd.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nessa etapa, vamos trabalhar com a metdologia de Design Thinking para compreender com maior profundidade o problema a ser tratado. Nesse processo, vamos elaborar:
->
-> * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
-> * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
-> * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
+![Entrevista qualitativa](images/entrevista-qualitativa.png)
+
+![Highlights 1](images/highlights1.png)
+
+![Highlights 2](images/highlights2.png)
+
+![Highlights 3](images/higlights3.png)
 
 ## Etapa de Definição
 
