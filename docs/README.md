@@ -97,8 +97,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-004 | Usuário deve poder deixar e ler comentários   | ALTA     |
 | RF-005 | Usuário deve poder checar a veracidade de links na internet  | ALTA     |
 | RF-006 | Usuário deve receber um aviso se o link que vai entrar é suspeito  | ALTA     |
-| RF-006 | O sistema oferece um chatbot que tira dúvidas  | BAIXA     |
-| RF-006 | O sistema deve ofecerer uma ferramenta  que checa se o texto é IA  | BAIXA    |
+| RF-007 | O sistema oferece um chatbot que tira dúvidas  | BAIXA     |
+| RF-008 | O sistema deve ofecerer uma ferramenta  que checa se o texto é IA  | BAIXA    |
 
 ### Requisitos não Funcionais
 
