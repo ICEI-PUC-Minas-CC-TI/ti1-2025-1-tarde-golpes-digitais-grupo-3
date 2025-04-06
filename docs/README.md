@@ -71,7 +71,7 @@ Nesse momento, vamos transformar os insights e validações obtidos em soluçõe
 
 ## Histórias de Usuários
 
-![História usuários](images/hist-uso.png)
+![História usuários](images/hist-uso.jpg)
 
 ## Proposta de Valor
 
