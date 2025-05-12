@@ -1,27 +1,23 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: Dismascara
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Valle Gusmao
+    given-names: Fernando
+  - family-names: Ribeiro
+    given-names: Kaique
+  - family-names: Lucas
+    given-names: Arthur
+  - family-names: Aogusto
+    given-names: Bernardo
+  - family-names: Lucas Lopes
+    given-names: Joao
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Freitas de Niz
+    given-names: Luciana Mara
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
 keywords:
   - 
   - 
