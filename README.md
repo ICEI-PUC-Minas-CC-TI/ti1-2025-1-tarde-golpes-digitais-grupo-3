@@ -10,7 +10,6 @@ Além de  prejuízos financeiros, esses crimes podem causar danos emocionais e  
 * Bernardo Augusto
 * Arthur Monteiro
 * Kaique Rezende
-* Lucas Franco
 * João Lucas Lopes
 
 ## Professores responsáveis
