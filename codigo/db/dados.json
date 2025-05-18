@@ -1,0 +1,47 @@
+{
+    "links": [
+      {
+        "id": 1,
+        "url": "https://www.bb.com.br/aapf/login.html#/acesso-aapf-agencia-conta",
+        "texto": "Este é o primeiro link"
+      }
+    ],
+    "comentarios": [
+      {
+        "id": 1,
+        "usuario_id": 1001,
+        "texto": "O aúdio dos vídeos é muito baixo"
+      },
+      {
+        "id": 2,
+        "usuario_id": 1002,
+        "texto": "O chatbot é muito útil!"
+      }
+    ],
+    "usuarios": [
+      {
+        "id": 1001,
+        "nome": "João Silva",
+        "email": "joao@exemplo.com"
+      },
+      {
+        "id": 1002,
+        "nome": "Maria Souza",
+        "email": "maria@exemplo.com"
+      }
+    ],
+    "videos": [
+      {
+        "id": 101,
+        "titulo": "Tutorial links",
+        "descricao": "Aprenda sobre links seguros e como usar nossa ferramenta",
+        "url": "https://exemplo.com/link3"
+      },
+      {
+        "id": 102,
+        "titulo": "Tutorial chatbot",
+        "descricao": "aprenda como usar a ferramenta do chatbot",
+        "url": "https://exemplo.com/link4"
+      }
+    ]
+  }
