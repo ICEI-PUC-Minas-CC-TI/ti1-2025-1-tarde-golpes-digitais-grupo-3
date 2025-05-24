@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dismascara</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="initSite()"> 
+  <header>
+    <div class="container">
+      <h1>Dismascara</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><button class="nav-btn active" data-target="noticias">Notícias</button></li>
+          <li><button class="nav-btn" data-target="artigos">Artigos</button></li>
+          <li><button class="nav-btn" data-target="informacoes">Informações</button></li>
+        </ul> 
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="noticias" class="tab-content"></section>
+    <section id="artigos" class="tab-content hidden"></section>
+    <section id="informacoes" class="tab-content hidden"></section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Dismascara. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/crud.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', initSite);
+</script>
+</body>
+</html>
