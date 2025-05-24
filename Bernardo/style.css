@@ -1,0 +1,40 @@
+.search-container {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+#search-input {
+  width: 70%;
+  height: 30px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+#search-button {
+  width: 20%;
+  height: 30px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#results {
+  margin-top: 20px;
+}
+
+.video {
+  margin-bottom: 20px;
+}
+
+.video-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.video-description {
+  font-size: 16px;
+  color: #666;
+}
