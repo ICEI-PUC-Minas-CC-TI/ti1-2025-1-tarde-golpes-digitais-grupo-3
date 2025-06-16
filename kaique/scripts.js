@@ -12,6 +12,16 @@ const videos = [
     titulo: "FRAUDES DIGITAIS CRESCERAM 45% EM 2024",
     url: "https://www.youtube.com/embed/NkI6j5FeCLY?si=OYxmkRXuSprpwRGM",
   },
+  {
+    titulo:
+      "GOLPES VIRTUAIS ATINGEM UM QUARTO DA POPULAÇÃO BRASILEIRA, REVELA PESQUISA",
+    url: "https://www.youtube.com/embed/ab6Aw6UDPQY?si=WVEK0HrOz6pnP7Rv",
+  },
+  {
+    titulo:
+      "JR Dinheiro: Número de golpes digitais aumenta no Brasil; jovens e idosos são as principais vítimas",
+    url: "https://www.youtube.com/embed/8uZN5U06s6o?si=hd9O2dNKNDpKotbi",
+  },
 ];
 
 const container = document.getElementById("video-container");
