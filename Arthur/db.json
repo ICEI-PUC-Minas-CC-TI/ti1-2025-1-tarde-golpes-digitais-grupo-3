@@ -1,0 +1,22 @@
+{
+  "tutorials": [
+    {
+      "id": 1,
+      "title": "Introdução ao HTML",
+      "description": "Aprenda como estruturar uma página com HTML básico.",
+      "link": "https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+    },
+    {
+      "id": 2,
+      "title": "Estilos com CSS",
+      "description": "Veja como aplicar estilos e layout com CSS.",
+      "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+    },
+    {
+      "id": 3,
+      "title": "JavaScript Iniciante",
+      "description": "Fundamentos do JavaScript para interatividade em sites.",
+      "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+    }
+  ]
+}

@@ -1,23 +1,51 @@
-let tutorials = JSON.parse(localStorage.getItem('tutorials')) || [];
+const API_URL = 'http://localhost:3000/tutorials';
 
-function saveTutorials() {
-  localStorage.setItem('tutorials', JSON.stringify(tutorials));
-}
+let tutorials = [];
 
 const isAdmin = document.body.id === 'page-admin';
 const isUsuario = document.body.id === 'page-usuario';
 
+async function fetchTutorials() {
+  const res = await fetch(API_URL);
+  tutorials = await res.json();
+  if (isAdmin) renderTutorialsAdmin();
+  if (isUsuario) renderCarousel();
+}
+
+async function saveTutorial(tutorial) {
+  const res = await fetch(API_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(tutorial),
+  });
+  return res.json();
+}
+
+async function updateTutorial(id, tutorial) {
+  await fetch(`${API_URL}/${id}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(tutorial),
+  });
+}
+
+async function deleteTutorial(id) {
+  await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
+  await fetchTutorials();
+}
+
+// ADMIN
 if (isAdmin) {
   const form = document.getElementById('tutorial-form');
   const titleInput = document.getElementById('title');
   const descInput = document.getElementById('description');
   const linkInput = document.getElementById('link');
   const tutorialList = document.getElementById('tutorial-list');
-  let editIndex = null;
+  let editId = null;
 
   function renderTutorialsAdmin() {
     tutorialList.innerHTML = '';
-    tutorials.forEach((tut, idx) => {
+    tutorials.forEach((tut) => {
       const div = document.createElement('div');
       div.className = 'tutorial-item';
 
@@ -27,43 +55,31 @@ if (isAdmin) {
           <small>${tut.description}</small>
         </div>
         <div class="tutorial-buttons">
-          <button type="button" onclick="editTutorial(${idx})">Editar</button>
-          <button type="button" onclick="deleteTutorial(${idx})">Excluir</button>
+          <button type="button" onclick="editTutorial(${tut.id})">Editar</button>
+          <button type="button" onclick="handleDelete(${tut.id})">Excluir</button>
         </div>
       `;
       tutorialList.appendChild(div);
     });
   }
 
-  function clearForm() {
-    titleInput.value = '';
-    descInput.value = '';
-    linkInput.value = '';
-    form.classList.remove('edit-mode');
-    editIndex = null;
-    document.getElementById('submit-btn').textContent = 'Adicionar Tutorial';
-  }
-
-  window.editTutorial = function(index) {
-    const tut = tutorials[index];
+  window.editTutorial = function (id) {
+    const tut = tutorials.find(t => t.id === id);
     titleInput.value = tut.title;
     descInput.value = tut.description;
     linkInput.value = tut.link;
     form.classList.add('edit-mode');
-    editIndex = index;
+    editId = id;
     document.getElementById('submit-btn').textContent = 'Salvar Alterações';
   };
 
-  window.deleteTutorial = function(index) {
+  window.handleDelete = async function (id) {
     if (confirm('Deseja realmente excluir este tutorial?')) {
-      tutorials.splice(index, 1);
-      saveTutorials();
-      renderTutorialsAdmin();
-      clearForm();
+      await deleteTutorial(id);
     }
   };
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const title = titleInput.value.trim();
     const description = descInput.value.trim();
@@ -74,19 +90,25 @@ if (isAdmin) {
       return;
     }
 
-    if (editIndex !== null) {
-      tutorials[editIndex] = { title, description, link };
+    const tutorial = { title, description, link };
+
+    if (editId) {
+      await updateTutorial(editId, { ...tutorial, id: editId });
+      editId = null;
     } else {
-      tutorials.push({ title, description, link });
+      await saveTutorial(tutorial);
     }
-    saveTutorials();
-    renderTutorialsAdmin();
-    clearForm();
+
+    form.reset();
+    form.classList.remove('edit-mode');
+    document.getElementById('submit-btn').textContent = 'Adicionar Tutorial';
+    await fetchTutorials();
   });
 
-  renderTutorialsAdmin();
+  fetchTutorials();
 }
 
+// USUÁRIO
 if (isUsuario) {
   const carouselTrack = document.getElementById('carousel-track');
   const prevBtn = document.getElementById('prev-btn');
@@ -140,7 +162,7 @@ if (isUsuario) {
 
   function updateButtons() {
     prevBtn.disabled = currentIndex === 0;
-    nextBtn.disabled = currentIndex === tutorials.length - 1;
+    nextBtn.disabled = currentIndex >= tutorials.length - 1;
   }
 
   prevBtn.addEventListener('click', () => {
@@ -160,6 +182,5 @@ if (isUsuario) {
   });
 
   window.addEventListener('resize', updateCarouselPosition);
-
-  renderCarousel();
+  fetchTutorials();
 }
