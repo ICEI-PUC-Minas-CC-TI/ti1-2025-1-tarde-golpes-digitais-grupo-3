@@ -1,31 +1,24 @@
-const searchInput = document.getElementById('search-input');
-const searchButton = document.getElementById('search-button');
-const resultsDiv = document.getElementById('results');
+let likeData = {
+    liked: false,
+    count: 0
+};
 
-searchButton.addEventListener('click', searchVideos);
+const likeBtn = document.getElementById("like-btn");
+const likeCount = document.getElementById("like-count");
 
-function searchVideos() {
-  const searchTerm = searchInput.value;
-  fetch(`https:                                          
-    .then(response => response.json())
-    .then(data => {
-      const videos = data.videos;
-      resultsDiv.innerHTML = '';
-      videos.forEach(video => {
-        const videoHTML = //api.example.com/videos?q=${searchTerm})
-    .then(response => response.json())
-    .then(data => {
-      const videos = data.videos;
-      resultsDiv.innerHTML = '';
-      videos.forEach(video => {
-        const videoHTML = `
-          <div class="video">
-            <h2 class="video-title">${video.title}</h2>
-            <p class="video-description">${video.description}</p>
-          </div>
-        `;
-        resultsDiv.innerHTML += videoHTML;
-      });
-    })
-    .catch(error => console.error(error));
+function updateUI() {
+    if (likeData.liked) {
+        likeBtn.classList.add("liked");
+    } else {
+        likeBtn.classList.remove("liked");
+    }
+    likeCount.textContent = likeData.count;
 }
+
+likeBtn.addEventListener("click", () => {
+    likeData.liked = !likeData.liked;
+    likeData.count += likeData.liked ? 1 : -1;
+    updateUI();
+});
+
+updateUI();
