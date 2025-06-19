@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Barra de Pesquisa de Vídeos</title>
-  <link rel="stylesheet" href="ti1-2025-1-tarde-golpes-digitais-grupo-3/docs/style.css">
+  <link rel="stylesheet" href="ti1-2025-1-tarde-golpes-digitais-grupo-3/blob/master/docs/style.css">
 </head>
 <body>
   <div class="search-container">
