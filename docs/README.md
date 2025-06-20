@@ -153,17 +153,7 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 | --------------------------- | ---------- | -------------------------------------------------- |
 | Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVIPFAJYY=/ |
 | Repositório de código     | GitHub     | https://github.com/ICEI-PUC-Minas-CC-TI/ti1-2025-1-tarde-golpes-digitais-grupo-3 |
-| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX ⚠️ EXEMPLO ⚠️ |
-| Protótipo Interativo       | MarvelApp  | https://marvelapp.com/XXXXXXX ⚠️ EXEMPLO ⚠️   |
-|                             |            |                                                    |
-
-
-## Gerenciamento do Projeto
-
-Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
-
-![Exemplo de Kanban](images/exemplo-kanban.png)
-
+| Hospedagem do site          | Github pages    | https://fvg1.github.io/Trabalho-apresentar/index.html |
 
 
 # Solução Implementada
@@ -172,7 +162,7 @@ Esta seção apresenta todos os detalhes da solução criada no projeto.
 
 ## Vídeo do Projeto
 
-O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. ⚠️ EXEMPLO ⚠️
+O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. 
 
 [![Vídeo do projeto](images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
 
