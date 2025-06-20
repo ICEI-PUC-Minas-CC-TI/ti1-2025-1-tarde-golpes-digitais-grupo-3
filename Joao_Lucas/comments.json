@@ -1,0 +1,23 @@
+[
+  {
+    "id": "c2e3057c-4b7e-4704-91b0-393610e185c6",
+    "nome": "Davi",
+    "comentario": "Ferramenta muito boa",
+    "likes": 2,
+    "dislikes": 0
+  },
+  {
+    "id": "e5bbcea1-1e1c-4173-a7a6-cdd0cb49807c",
+    "nome": "João",
+    "comentario": "Me ajudou bastante",
+    "likes": 1,
+    "dislikes": 0
+  },
+  {
+    "id": "a0e2bbdc-2b0f-4b89-8dc1-2cae24e53f60",
+    "nome": "Júlia",
+    "comentario": "Acabei não gostando",
+    "likes": 0,
+    "dislikes": 1
+  }
+]
