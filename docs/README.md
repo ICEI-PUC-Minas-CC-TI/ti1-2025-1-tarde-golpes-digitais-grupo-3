@@ -244,6 +244,8 @@ Esta seção apresenta os módulos e APIs utilizados na solução
 
 As referências utilizadas no trabalho foram:
 
-* SOBRENOME, Nome do autor. Título da obra. 8. ed. Cidade: Editora, 2000. 287 p ⚠️ EXEMPLO ⚠️
+* https://www12.senado.leg.br/noticias/infomaterias/2025/04/golpes-virtuais-aumentam-e-nao-fazem-distincao-de-idade
+* https://www.datacenterdynamics.com/br/not%C3%ADcias/setor-banc%C3%A1rio-%C3%A9-o-maior-alvo-de-golpes-digitais-no-brasil/
+* https://g1.globo.com/go/goias/especial-publicitario/saneago/noticia/2025/05/28/golpes-virtuais-por-que-o-brasil-virou-terreno-fertil-para-criminosos-digitais.ghtml
 
 
