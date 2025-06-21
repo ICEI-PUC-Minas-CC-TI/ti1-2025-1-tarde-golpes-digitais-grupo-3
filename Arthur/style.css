@@ -1,0 +1,146 @@
+:root 
+{
+  --cor-fundo: #363432;
+  --cor-primaria: #196774;
+  --cor-secundaria: #90A19D;
+  --cor-destaque1: #F0941F;
+  --cor-destaque2: #EF6024;
+  --branco: #ffffff;
+}
+
+body 
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: var(--cor-fundo);
+  color: var(--branco);
+}
+
+header 
+{
+  background-color: var(--cor-primaria);
+  padding: 1rem 0;
+}
+
+header h1 
+{
+  text-align: center;
+  color: var(--branco);
+}
+
+.container 
+{
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+}
+
+.nav-list 
+{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.nav-btn 
+{
+  background-color: var(--cor-destaque1);
+  color: var(--branco);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main 
+{
+  padding: 2rem 0;
+}
+
+h2 
+{
+  color: var(--cor-destaque1);
+  margin-bottom: 1rem;
+}
+
+.card-container 
+{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-bottom: 2rem;
+}
+
+.card 
+{
+  background-color: var(--cor-primaria);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--cor-destaque2);
+}
+
+.card h3 
+{
+  margin-top: 0;
+  color: var(--cor-destaque1);
+}
+
+.card p 
+{
+  color: var(--branco);
+}
+
+.btn-excluir 
+{
+  background-color: var(--cor-destaque2);
+  color: var(--branco);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: var(--cor-primaria);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+form input,
+form textarea 
+{
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+form button 
+{
+  background-color: var(--cor-destaque1);
+  color: var(--branco);
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer 
+{
+  background-color: #222;
+  color: var(--cor-secundaria);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}

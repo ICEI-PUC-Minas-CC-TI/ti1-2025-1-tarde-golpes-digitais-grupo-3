@@ -1,41 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dismascara</title>
-  <link rel="stylesheet" href="ti1-2025-1-tarde-golpes-digitais-grupo-3/blob/master/docs/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artigos</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --cor-fundo: #f4f4f4;
+      --cor-card: #ffffff;
+      --cor-titulo: #196774;
+      --cor-texto: #363432;
+      --cor-destaque: #F0941F;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--cor-fundo);
+    }
+
+    header {
+      background-color: var(--cor-titulo);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .artigos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: var(--cor-card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      color: var(--cor-titulo);
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--cor-texto);
+      line-height: 1.5;
+    }
+  </style>
 </head>
-<body onload="initSite()"> 
+<body>
   <header>
-    <div class="container">
-      <h1>Dismascara</h1>
-      <nav>
-        <ul class="nav-list">
-          <li><button class="nav-btn active" data-target="noticias">Notícias</button></li>
-          <li><button class="nav-btn" data-target="artigos">Artigos</button></li>
-          <li><button class="nav-btn" data-target="informacoes">Informações</button></li>
-        </ul> 
-      </nav>
-    </div>
+    <h1>Artigos Recentes</h1>
   </header>
 
-  <main class="container">
-    <section id="noticias" class="tab-content"></section>
-    <section id="artigos" class="tab-content hidden"></section>
-    <section id="informacoes" class="tab-content hidden"></section>
+  <main>
+    <section id="lista-artigos" class="artigos-container">
+      <!-- Artigos carregados dinamicamente aqui -->
+    </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Dismascara. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-  <script src="js/crud.js"></script>
-  <script>
-  document.addEventListener('DOMContentLoaded', initSite);
-</script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>

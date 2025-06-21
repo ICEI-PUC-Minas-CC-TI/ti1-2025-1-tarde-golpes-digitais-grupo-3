@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin - Gerenciar Tutoriais</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body id="page-admin">
+
+  <h1>Gerenciar Tutoriais</h1>
+
+  <form id="tutorial-form">
+    <label for="title">Título:</label>
+    <input type="text" id="title" required />
+
+    <label for="description">Descrição:</label>
+    <textarea id="description" rows="3" required></textarea>
+
+    <label for="link">Link (URL):</label>
+    <input type="url" id="link" required />
+
+    <button id="submit-btn" type="submit">Adicionar Tutorial</button>
+  </form>
+
+  <div id="tutorial-list" class="tutorial-list"></div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
