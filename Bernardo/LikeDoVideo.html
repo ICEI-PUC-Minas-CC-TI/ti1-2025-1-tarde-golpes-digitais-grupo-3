@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Like no Vídeo</title>
-    <link rel="stylesheet" href="ti1-2025-1-tarde-golpes-digitais-grupo-3/blob/master/docs/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Like em Vídeo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="video-container">
-        <h2>Vídeo Legal</h2>
-        <div class="like-section">
-            <span id="like-btn" class="like-button">👍</span>
-            <span id="like-count">0</span>
-        </div>
+  <div class="video-container">
+    <video controls>
+      <source src="video.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo HTML5.
+    </video>
+    <div class="like-section">
+      <button id="likeButton">👍 Curtir</button>
+      <span id="likeCount">0</span> curtidas
     </div>
-
-    <script src="script.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
