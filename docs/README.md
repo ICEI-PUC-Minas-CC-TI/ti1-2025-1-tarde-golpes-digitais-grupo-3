@@ -9,7 +9,8 @@ Informações básicas do projeto.
   * [Fernando Valle Gusmão](https://github.com/FVG1) 
   * [Arthur Monteiro](https://github.com/Arthur-Monteiro-CC) 
   * [Bernardo Gemer](https://github.com/Bernardo07-av)
-  * [João Lucas](https://github.com/joaolucaspuc) 
+  * [João Lucas](https://github.com/joaolucaspuc)
+  * [Kaique Rezende](https://github.com/Kaique-tec) 
 
 A documentação do projeto é estruturada da seguinte forma:
 
