@@ -1,24 +1,35 @@
-let likeData = {
-    liked: false,
-    count: 0
+let videoData = {
+  videoId: "001",
+  likes: 0,
+  likedByUser: false
 };
 
-const likeBtn = document.getElementById("like-btn");
-const likeCount = document.getElementById("like-count");
+const likeButton = document.getElementById("likeButton");
+const likeCount = document.getElementById("likeCount");
 
-function updateUI() {
-    if (likeData.liked) {
-        likeBtn.classList.add("liked");
-    } else {
-        likeBtn.classList.remove("liked");
-    }
-    likeCount.textContent = likeData.count;
+// Atualiza o contador na interface
+function updateLikeDisplay() {
+  likeCount.textContent = videoData.likes;
+  if (videoData.likedByUser) {
+    likeButton.classList.add("liked");
+    likeButton.textContent = "💔 Descurtir";
+  } else {
+    likeButton.classList.remove("liked");
+    likeButton.textContent = "👍 Curtir";
+  }
 }
 
-likeBtn.addEventListener("click", () => {
-    likeData.liked = !likeData.liked;
-    likeData.count += likeData.liked ? 1 : -1;
-    updateUI();
+// Evento de clique
+likeButton.addEventListener("click", () => {
+  if (videoData.likedByUser) {
+    videoData.likes--;
+    videoData.likedByUser = false;
+  } else {
+    videoData.likes++;
+    videoData.likedByUser = true;
+  }
+  updateLikeDisplay();
 });
 
-updateUI();
+// Inicializa a interface
+updateLikeDisplay();
