@@ -1,4 +1,6 @@
 {
-  "liked": false,
-  "count": 0
+  "videoId": "001",
+  "title": "Exemplo de Vídeo",
+  "likes": 0,
+  "likedByUser": false
 }
